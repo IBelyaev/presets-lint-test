@@ -1,0 +1,14 @@
+name: Create version
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: create new version
+        run: echo 'Create new version only for master push ' && /
+        yarn --frozen-lockfile && yarn semantic-release
