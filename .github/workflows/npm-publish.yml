@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: create new version
-        run: ${{ github.workspace }}/.github/workflows/scropts/create-artifact.sh
+        run: ./scripts/create-artifact.sh
