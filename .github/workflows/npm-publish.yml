@@ -11,6 +11,6 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: create new version
-        run: ${{ github.workspace }}./scripts/create-artifact.sh
+        run: ${{ github.workspace }}/.github/workflows/scripts/create-artifact.sh
         env:
           CI: true
