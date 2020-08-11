@@ -9,7 +9,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v1
       - name: create new version
-        run: ls -a && cd .. && ls -a  
+        run: ./scripts/create-artifact.sh
         env:
           CI: true
