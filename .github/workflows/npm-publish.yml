@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: create new version
-        run: echo 'Create new version onl y for master push ' && yarn --frozen-lockfile && yarn --cwd ${{ github.workspace }} semantic-release
+        run: echo 'Create new version onl y for master push '&&  ls -a #&& yarn --frozen-lockfile && yarn --cwd ${{ github.workspace }} semantic-release
