@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: create new version
-        run: ./scripts/create-artifact.sh
+        run: ls -a 
