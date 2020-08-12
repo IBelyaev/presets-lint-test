@@ -3,6 +3,27 @@
 
 ### Bug Fixes
 
+* add ([ac26925](https://github.com/IBelyaev/presets-lint-test/commit/ac269255f0db5276f7d28c4c963c3b2650ea4f1f))
+* add ([ca4326b](https://github.com/IBelyaev/presets-lint-test/commit/ca4326b3072de7c370cb5196ceeba86322fd7741))
+* add ([8e84146](https://github.com/IBelyaev/presets-lint-test/commit/8e8414606d1c271406f14010f0d9feb8ba6b4fdd))
+* add ([4ee8007](https://github.com/IBelyaev/presets-lint-test/commit/4ee8007b6a0d40dbc57b396964ef718a3169b53d))
+* add ([3f38f97](https://github.com/IBelyaev/presets-lint-test/commit/3f38f9712accca5f13b23cf6eff324189233cb99))
+* add ([2593022](https://github.com/IBelyaev/presets-lint-test/commit/259302287aef040d200c5a6f8d41122a0a624cad))
+* add ([49c9161](https://github.com/IBelyaev/presets-lint-test/commit/49c916121454dc778406a3f719f01513864b45b7))
+* add ([316de1b](https://github.com/IBelyaev/presets-lint-test/commit/316de1b596e8492d677d6c1b7ce96f44ccbb16f5))
+* add ([e9a1b71](https://github.com/IBelyaev/presets-lint-test/commit/e9a1b71a3c284380668e1757ad37a02cbfa41f74))
+* fix ([6743abe](https://github.com/IBelyaev/presets-lint-test/commit/6743abe21ed9f15fa1480a526a9b6f0cfd22416a))
+* fix ([9521675](https://github.com/IBelyaev/presets-lint-test/commit/9521675b01010f4492919711c93ca1ea60328f73))
+* test ([c077f3b](https://github.com/IBelyaev/presets-lint-test/commit/c077f3b6036b592b0fe8487a9dd72af1a1f9c502))
+* test ([135e094](https://github.com/IBelyaev/presets-lint-test/commit/135e09461f6407b39fcaa9d742d1a9695336211c))
+* test ([2980b28](https://github.com/IBelyaev/presets-lint-test/commit/2980b28ac0d425e61f2a510ae743dabf7cab831e))
+* test ([f926b10](https://github.com/IBelyaev/presets-lint-test/commit/f926b10575f9589c66cbe53a39d2964e4993ebc8))
+
+## [1.0.3](https://github.com/IBelyaev/presets-lint-test/compare/v1.0.2...v1.0.3) (2020-08-12)
+
+
+### Bug Fixes
+
 * add ([3f38f97](https://github.com/IBelyaev/presets-lint-test/commit/3f38f9712accca5f13b23cf6eff324189233cb99))
 * add ([2593022](https://github.com/IBelyaev/presets-lint-test/commit/259302287aef040d200c5a6f8d41122a0a624cad))
 * add ([49c9161](https://github.com/IBelyaev/presets-lint-test/commit/49c916121454dc778406a3f719f01513864b45b7))
