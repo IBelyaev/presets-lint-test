@@ -1,7 +1,7 @@
 {
   "name": "presets-lint-test",
   "version": "0.0.0-development",
-  "description": "This project only for test new CI flow, all code base inside is copy from https://github.com/alfa-laboratory/arui-presets-lint",
+  "description": "This project  only for test new CI flow, all code base inside is copy from https://github.com/alfa-laboratory/arui-presets-lint",
   "dependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
