@@ -52,6 +52,7 @@ module.exports = {
         'media-feature-colon-space-before': 'never',
         'media-feature-parentheses-space-inside': 'never',
         'at-rule-semicolon-space-before': 'never',
+
     },
     plugins: [require.resolve('arui-cssvars/lint/stylelint')],
 };
