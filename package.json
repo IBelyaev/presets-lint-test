@@ -98,8 +98,5 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/IBelyaev/presets-lint-test.git"
-  },
-  "publishConfig": {
-    "registry": "https://npmjs.com/~igor-alfa-test"
   }
 }
