@@ -13,7 +13,7 @@ jobs:
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
       - name: create new version
-        run: yarn --frozen-lockfile && yarn semantic-release #${{ github.workspace }}/.github/workflows/scripts/create-artifact.sh
+        run: yarn --frozen-lockfile && yarn semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
