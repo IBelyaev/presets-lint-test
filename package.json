@@ -100,6 +100,6 @@
     "url": "https://github.com/IBelyaev/presets-lint-test.git"
   },
   "publishConfig": {
-    "registry": "https://www.npmjs.com/~igor-alfa-test"
+    "registry": "https://npmjs.com/~igor-alfa-test"
   }
 }
