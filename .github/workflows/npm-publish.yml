@@ -13,8 +13,7 @@ jobs:
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
       - name: create new version
-        run: yarn --frozen-lockfile && yarn semantic-release
+        run: yarn --frozen-lockfile && yarn NPM_TOKEN=${{ secrets.NPM_TOKEN }} semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           CI: true
