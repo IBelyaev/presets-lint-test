@@ -16,4 +16,5 @@ jobs:
         run: yarn --frozen-lockfile && yarn semantic-release #${{ github.workspace }}/.github/workflows/scripts/create-artifact.sh
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           CI: true
