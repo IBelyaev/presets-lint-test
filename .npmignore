@@ -3,3 +3,8 @@ test
 .eslintrc.js
 yarn-error.log
 .editorconfig
+github
+.travis.yml
+release.config.js
+commitlint.config.js
+.huskyrc.json
