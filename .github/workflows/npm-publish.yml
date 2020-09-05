@@ -10,11 +10,11 @@ jobs:
       - uses: actions/checkout@v1
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-          WORK_SPACE: ${{ github.workspace }}
-          CI: true
-        # if: ${{  }}
-        run: echo ${{ GITHUB_REF }}
-        #  ${WORK_SPACE}/.github/workflows/scripts/create-artifact.sh
+      run: echo ${{ GITHUB_REF }}
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        WORK_SPACE: ${{ github.workspace }}
+        CI: true
+      # if: ${{  }}
+      #  ${WORK_SPACE}/.github/workflows/scripts/create-artifact.sh
