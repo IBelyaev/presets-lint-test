@@ -10,8 +10,8 @@ jobs:
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
       - name: create new version
-        # if: ${{  }}
-        run: echo ${GITHUB_REF}
+        if: [[ $GITHUB_REF =~ .*master$ ]]
+        run: echo "я великий кукурузо"
         #  ${WORK_SPACE}/.github/workflows/scripts/create-artifact.sh
         env:
           GITHUB_REF: ${{ github.ref }}
