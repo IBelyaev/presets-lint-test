@@ -5,10 +5,13 @@ on: push
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      TEST_1: ${{ github.repository }} 
-      TEST_2: ${{ github.head_ref }} 
-      TEST_3: ${{ github.event.number }}
+    strategy:
+      matrix:
+        node-version: [10.x, 12.x]
+        env:
+          TEST_1: ${{ github.repository }} 
+          TEST_2: ${{ github.head_ref }} 
+          TEST_3: ${{ github.event.number }}
     steps:
       - uses: actions/checkout@v1
         with:
