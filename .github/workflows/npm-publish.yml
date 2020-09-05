@@ -7,13 +7,26 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        test-scope: [ lint, unit, gemini ]
+        test-scope: [lint, unit, gemini]
+        node-version: [12.14.1]
 
     steps:
-      - uses: actions/checkout@v1
-      - name: create new version
-        run: |
-          echo ${THREAD_NAME}
+      - name: install dependencies
+        uses: actions/checkout@v1
+        run: yarn
+
+        - name: check lints
+        uses: actions/checkout@v1
+        run: yarn test:eslint
+        if: ${{ THREAD_NAME == 'lint' }}
         env:
           CI: true
           THREAD_NAME: ${{ matrix.test-scope }}
+
+        - name: run all tests
+          uses: actions/checkout@v1
+          run: yarn test
+          if: ${{ THREAD_NAME == 'unit' }}
+          env:
+            CI: true
+            THREAD_NAME: ${{ matrix.test-scope }}
