@@ -12,19 +12,13 @@ jobs:
 
     steps:
       - uses: actions/checkout@v1
-      - name: install dependencies
-        run: yarn
-
-      - name: check lints
-        run: yarn test:eslint
-        if: ${{ $THREAD_NAME == 'lint' }}
-        env:
-          CI: true
-          THREAD_NAME: ${{ matrix.test-scope }}
-
-      - name: run all tests
-        run: yarn test
-        if: ${{ $THREAD_NAME == 'unit' }}
+      - name: create new version
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+        if: ${{ THREAD_NAME == 'lint' }}
+        run: |
+          npm run lint
         env:
           CI: true
           THREAD_NAME: ${{ matrix.test-scope }}
