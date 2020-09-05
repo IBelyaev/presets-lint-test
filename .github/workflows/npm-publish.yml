@@ -7,24 +7,13 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [10.x, 12.x]
-        env:
-          TEST_1: ${{ github.repository }} 
-          TEST_2: ${{ github.head_ref }} 
-          TEST_3: ${{ github.event.number }}
+        test-scope: [ lint, unit, gemini ]
+
     steps:
       - uses: actions/checkout@v1
-        with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
       - name: create new version
-        shell: bash
         run: |
-          echo "TEST_2: ${TEST_2}"
-          echo "TEST_3: ${TEST_3}"
-          echo "TEST_1: ${TEST_1}"
+          echo ${THREAD_NAME}
         env:
-          GITHUB_REF: ${{ github.ref }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-          WORK_SPACE: ${{ github.workspace }}
           CI: true
+          THREAD_NAME: ${{ matrix.test-scope }}
