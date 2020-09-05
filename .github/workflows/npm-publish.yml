@@ -17,14 +17,14 @@ jobs:
 
       - name: check lints
         run: yarn test:eslint
-        if: ${{ THREAD_NAME == 'lint' }}
+        if: ${{ $THREAD_NAME == 'lint' }}
         env:
           CI: true
           THREAD_NAME: ${{ matrix.test-scope }}
 
       - name: run all tests
         run: yarn test
-        if: ${{ THREAD_NAME == 'unit' }}
+        if: ${{ $THREAD_NAME == 'unit' }}
         env:
           CI: true
           THREAD_NAME: ${{ matrix.test-scope }}
