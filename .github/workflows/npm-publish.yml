@@ -20,7 +20,7 @@ jobs:
       - name: Lint's checks
         if: ${{ 'lint' == 'lint' }}
         run: |
-          npm run lint
+          echo $env
         env:
           CI: true
           THREAD_NAME: ${{ matrix.test-scope }}
