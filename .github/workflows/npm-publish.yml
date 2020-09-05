@@ -5,15 +5,20 @@ on: push
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      TEST_1: ${{ github.repository }} 
+      TEST_2: ${{ github.head_ref }} 
+      TEST_3: ${{ github.event.number }}
     steps:
       - uses: actions/checkout@v1
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
       - name: create new version
         shell: bash
-        if: ${{ [[ ${GITHUB_REF} =~ .*master$ ]] }}
-        run: echo "я великий кукурузо"
-        #  ${WORK_SPACE}/.github/workflows/scripts/create-artifact.sh
+        run: |
+          echo "TEST_2: ${TEST_2}"
+          echo "TEST_3: ${TEST_3}"
+          echo "TEST_1: ${TEST_1}"
         env:
           GITHUB_REF: ${{ github.ref }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
