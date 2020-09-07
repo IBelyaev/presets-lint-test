@@ -20,7 +20,7 @@ jobs:
       - name: Lint's checks
         if: ${{ matrix.test-scope == 'lint' }}
         run: |
-          echo "$THREAD_NAME"
+          echo ${{ github.workspace }} && cat ${{ github.workspace }}/prettier.js
         env:
           CI: true
           THREAD_NAME: ${{ matrix.test-scope }}
