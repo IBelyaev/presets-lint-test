@@ -24,3 +24,7 @@ jobs:
         env:
           CI: true
           THREAD_NAME: ${{ matrix.test-scope }}
+
+      - uses: actions/checkout@v2
+      - name: locking for file for coveralls  
+        run: echo ${{ github.workspace }} && ls ${{ github.workspace }}
