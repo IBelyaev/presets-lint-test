@@ -1,26 +1,21 @@
 name: Create version
 
-on: push
+on:
+  push:
+    branches:
+      - master
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        test-scope: [lint, unit, gemini]
-        node-version: [12.14.1]
-
     steps:
       - uses: actions/checkout@v1
-      - name: create new version
-        uses: actions/setup-node@v1
         with:
-          node-version: ${{ matrix.node-version }}
-
-      - name: Lint's checks
-        if: ${{ matrix.test-scope == 'lint' }}
-        run: |
-          echo "$THREAD_NAME"
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+      - name: create new version
+        run: ${WORK_SPACE}/.github/workflows/scripts/create-artifact.sh
         env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          WORK_SPACE: ${{ github.workspace }}
           CI: true
-          THREAD_NAME: ${{ matrix.test-scope }}
