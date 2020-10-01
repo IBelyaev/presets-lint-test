@@ -60,7 +60,6 @@
   },
   "scripts": {
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
-    "github-release": "conventional-github-releaser -p angular",
     "lint": "eslint ./",
     "test": "yarn test:eslint && yarn test:stylelint",
     "test:eslint": "eslint \"./test/**/*.{ts,tsx,js,jsx}\"",
@@ -78,6 +77,7 @@
       "yarn test:stylelint"
     ]
   },
+  "private": true,
   "resolutions": {
     "set-value": ">=2.0.1",
     "js-yaml": ">=3.13.1",
