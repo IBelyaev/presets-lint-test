@@ -1,3 +1,7 @@
-*.*  @dmitrbrvsk @semantic-release/git  @semantic-release-bot
+*.js @dmitrbrvsk
+*.css @dmitrbrvsk
+*.ts @dmitrbrvsk
+*.tsx @dmitrbrvsk
+
 
 
