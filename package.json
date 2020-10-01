@@ -77,7 +77,6 @@
       "yarn test:stylelint"
     ]
   },
-  "private": true,
   "resolutions": {
     "set-value": ">=2.0.1",
     "js-yaml": ">=3.13.1",
