@@ -1,3 +1,12 @@
+## [1.3.17](https://github.com/IBelyaev/presets-lint-test/compare/v1.3.16...v1.3.17) (2020-10-02)
+
+
+### Bug Fixes
+
+* test ([388ff80](https://github.com/IBelyaev/presets-lint-test/commit/388ff803ff03fbd6b46719dabe2548991a560985))
+* test ([06f8e58](https://github.com/IBelyaev/presets-lint-test/commit/06f8e58e33f4ad38ae584b04d48971a802f2b9ef))
+* test ([b8627da](https://github.com/IBelyaev/presets-lint-test/commit/b8627da5ce73b7563717c2a1f12ca1b5e1c2fb16))
+
 ## [1.3.16](https://github.com/IBelyaev/presets-lint-test/compare/v1.3.15...v1.3.16) (2020-10-02)
 
 
