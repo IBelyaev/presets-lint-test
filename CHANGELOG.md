@@ -1,3 +1,21 @@
+## [1.3.12](https://github.com/IBelyaev/presets-lint-test/compare/v1.3.11...v1.3.12) (2020-10-02)
+
+
+### Bug Fixes
+
+* fix ([2d4ad5e](https://github.com/IBelyaev/presets-lint-test/commit/2d4ad5eeb85fdd0f2d3e2f891f047a3f83bfd96f))
+* ollololololo ([000ab2a](https://github.com/IBelyaev/presets-lint-test/commit/000ab2aa4786f3aeceb709c2607b466c2a11adf7))
+* ollololololo ([0c37741](https://github.com/IBelyaev/presets-lint-test/commit/0c37741b848c8d7cb8ea26b42a44e3d8b659e0f6))
+* ollololololo ([35c7c77](https://github.com/IBelyaev/presets-lint-test/commit/35c7c77f94cc498e2c82f999dd155a37c99a75f1))
+* olololol ([8261809](https://github.com/IBelyaev/presets-lint-test/commit/826180971960b63fb2ea2917a5862f2821f28b1a))
+* some strange commit again ([a054f88](https://github.com/IBelyaev/presets-lint-test/commit/a054f8801fd855f459af77e98aa41f65aac75097))
+* test ([2407b7e](https://github.com/IBelyaev/presets-lint-test/commit/2407b7eaaaa8a205997082ddfdbfa581a6d639c6))
+* test ([f74c137](https://github.com/IBelyaev/presets-lint-test/commit/f74c13788627829fdd84db74b4bfc53be697f786))
+* test ([4510d41](https://github.com/IBelyaev/presets-lint-test/commit/4510d4151b7076213d1596a55ea4db55bc3c332a))
+* test ([9310808](https://github.com/IBelyaev/presets-lint-test/commit/93108087eee32a08b58bf7eadf4a404c23bc94e4))
+* test ([e16bab2](https://github.com/IBelyaev/presets-lint-test/commit/e16bab27897d7528a966d3b7119db27dfdcae3f3))
+* test ([5ab4242](https://github.com/IBelyaev/presets-lint-test/commit/5ab4242f08bab31f6174beec4b4ef2b0f0f3da8b))
+
 ## [1.3.11](https://github.com/IBelyaev/presets-lint-test/compare/v1.3.10...v1.3.11) (2020-10-01)
 
 
