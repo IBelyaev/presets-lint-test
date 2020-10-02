@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Check commit owner
-        run: whoami
+        run: ${WORK_SPACE}/.github/workflows/scripts/who-i-am-git.sh
       - name: Create new version
         run: ${WORK_SPACE}/.github/workflows/scripts/create-artifact.sh
         env:
