@@ -1,3 +1,10 @@
+## [1.3.14](https://github.com/IBelyaev/presets-lint-test/compare/v1.3.13...v1.3.14) (2020-10-02)
+
+
+### Bug Fixes
+
+* ololololo ([ee7df8c](https://github.com/IBelyaev/presets-lint-test/commit/ee7df8c7cee4d5b6885d8fda8060f4892a4411f2))
+
 ## [1.3.13](https://github.com/IBelyaev/presets-lint-test/compare/v1.3.12...v1.3.13) (2020-10-02)
 
 
