@@ -33,6 +33,7 @@ module.exports = {
         'no-whitespace-before-property': ['warn'],
         'quote-props': ['warn', 'as-needed'],
         semi: ['warn'],
+        'semi-spacing': ['warn'],
         'semi-style': ['warn'],
         'space-before-blocks': ['warn'],
         'space-in-parens': ['warn'],

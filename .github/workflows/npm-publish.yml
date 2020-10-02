@@ -10,6 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
+      - name: Check commit owner
+        run: git config user.name
       - name: Create new version
         run: ${WORK_SPACE}/.github/workflows/scripts/create-artifact.sh
         env:
