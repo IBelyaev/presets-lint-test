@@ -33,7 +33,6 @@ module.exports = {
         'no-whitespace-before-property': ['warn'],
         'quote-props': ['warn', 'as-needed'],
         semi: ['warn'],
-        'semi-spacing': ['warn'],
         'semi-style': ['warn'],
         'space-before-blocks': ['warn'],
         'space-in-parens': ['warn'],
@@ -112,8 +111,8 @@ module.exports = {
         'import/no-unresolved': 'off',
         'import/extensions': 'off',
         'import/no-useless-path-segments': ['error', {
-            'noUselessIndex': true
-        }]
+            noUselessIndex: true,
+        }],
     },
     overrides: [
         {
