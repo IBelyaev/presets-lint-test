@@ -111,9 +111,12 @@ module.exports = {
         'import/prefer-default-export': 'off',
         'import/no-unresolved': 'off',
         'import/extensions': 'off',
-        'import/no-useless-path-segments': ['error', {
-            noUselessIndex: true,
-        }],
+        'import/no-useless-path-segments': [
+            'error',
+            {
+                noUselessIndex: true,
+            },
+        ],
     },
     overrides: [
         {
